@@ -1,8 +1,7 @@
 #!/bin/bash
 #GALARTEC CONSULTORES
 
-ODOOVERSION=14.0
-DEPTH=1
+ODOOVERSION=14.0 
 PATHBASE=~/Developments/odoo14
 PATHREPOS=~/Developments/odoo14/extra-addons
 
@@ -24,12 +23,13 @@ mkdir $PATHBASE
 mkdir $PATHREPOS
 cd $PATHBASE
 # Download Odoo from git source
-git clone https://github.com/odoo/odoo.git -b $ODOOVERSION --depth $DEPTH
+git clone https://github.com/odoo/odoo.git -b $ODOOVERSION --depth 1
 
 # Instalar python3 and dependencias para Odoo
-sudo apt-get -y install gcc python3-dev libxml2-dev libxslt1-dev \
- libevent-dev libsasl2-dev libldap2-dev libpq-dev \
- libpng-dev libjpeg-dev
+sudo apt-get install git python3 python3-pip 
+build-essential wget python3-dev python3-venv python3-wheel libxslt-dev 
+libzip-dev libldap2-dev libsasl2-dev python3-setuptools node-less libpng12-0 libjpeg-dev gdebi -y
+ 
 
 sudo apt-get -y install python3 python3-pip python-pip
 sudo pip3 install libsass vobject qrcode num2words setuptools
