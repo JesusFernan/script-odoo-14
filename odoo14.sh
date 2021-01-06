@@ -3,8 +3,8 @@
 
 ODOOVERSION=14.0
 DEPTH=1
-PATHBASE=~/Developments/odoo12
-PATHREPOS=~/Developments/odoo12/extra-addons
+PATHBASE=~/Developments/odoo14
+PATHREPOS=~/Developments/odoo14/extra-addons
 
 #Libreria de Wkhtmltopdf para los distintas arquitecturas SO
 wk64="https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.$(lsb_release -cs)_amd64.deb"
