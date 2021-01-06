@@ -68,4 +68,4 @@ sudo apt-get -f -y install
 python3 $PATHBASE/odoo/odoo-bin
 
 
-echo "Odoo 14 instalado correctamente: Jesús Fernández"
+echo "Odoo 14 instalado correctamente Jesús Fernández"
