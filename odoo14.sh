@@ -22,7 +22,7 @@ mkdir ~/Developments
 mkdir $PATHBASE
 mkdir $PATHREPOS
 cd $PATHBASE
-# Download Odoo from git source
+# Descarga de Odoo desde el repositorio oficial
 git clone https://github.com/odoo/odoo.git -b $ODOOVERSION --depth 1
 
 # Instalar python3 and dependencias para Odoo
